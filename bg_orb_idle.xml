@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dimmed orb state for when the mic is idle -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="60%"
+                android:centerColor="#334C1D95"
+                android:endColor="#221A0533" />
+            <size android:width="180dp" android:height="180dp" />
+        </shape>
+    </item>
+    <item
+        android:top="28dp"
+        android:bottom="28dp"
+        android:left="28dp"
+        android:right="28dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50%"
+                android:centerColor="#664C1D95"
+                android:endColor="#443B0764" />
+        </shape>
+    </item>
+</layer-list>

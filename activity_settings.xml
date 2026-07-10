@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shizuka_purple_900"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shizuka_purple_900"
+        android:elevation="0dp"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="@string/settings_title"
+        app:titleTextColor="@color/shizuka_text_primary"
+        app:subtitleTextColor="@color/shizuka_text_secondary" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1A8C6BFF" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="48dp">
+
+            <!-- Section: Connection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="CONNECTION"
+                android:textColor="@color/shizuka_purple_400"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12" />
+
+            <!-- Backend URL -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBackendUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/settings_backend_url_label"
+                app:boxBackgroundColor="#1A1633"
+                app:boxStrokeColor="#558C6BFF"
+                app:hintTextColor="@color/shizuka_purple_400"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBackendUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_backend_url_hint"
+                    android:inputType="textUri"
+                    android:textColor="@color/shizuka_text_primary"
+                    android:textColorHint="@color/shizuka_text_secondary"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Section: API Keys -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:text="API KEYS  (stored locally, never sent to third parties)"
+                android:textColor="@color/shizuka_purple_400"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12" />
+
+            <!-- Backend API Key (x-shizuka-api-key shared secret) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBackendApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:hint="Backend Secret Key (x-shizuka-api-key)"
+                app:boxBackgroundColor="#1A1633"
+                app:boxStrokeColor="#558C6BFF"
+                app:hintTextColor="@color/shizuka_purple_400"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBackendApiKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Leave blank if backend has no auth"
+                    android:inputType="textPassword"
+                    android:textColor="@color/shizuka_text_primary"
+                    android:textColorHint="@color/shizuka_text_secondary"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Section: API Keys (LLM — stored locally for reference) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="LLM KEYS  (stored on-device for your reference; configure them as env vars on the server)"
+                android:textColor="@color/shizuka_purple_400"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.08" />
+
+            <!-- Gemini API Key -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilGeminiKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/settings_gemini_key_label"
+                app:boxBackgroundColor="#1A1633"
+                app:boxStrokeColor="#558C6BFF"
+                app:hintTextColor="@color/shizuka_purple_400"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGeminiKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_gemini_key_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/shizuka_text_primary"
+                    android:textColorHint="@color/shizuka_text_secondary"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Groq API Key -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilGroqKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:hint="@string/settings_groq_key_label"
+                app:boxBackgroundColor="#1A1633"
+                app:boxStrokeColor="#558C6BFF"
+                app:hintTextColor="@color/shizuka_purple_400"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGroqKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_groq_key_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/shizuka_text_primary"
+                    android:textColorHint="@color/shizuka_text_secondary"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Section: Personalization -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="PERSONALIZATION"
+                android:textColor="@color/shizuka_purple_400"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12" />
+
+            <!-- User Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/settings_username_label"
+                app:boxBackgroundColor="#1A1633"
+                app:boxStrokeColor="#558C6BFF"
+                app:hintTextColor="@color/shizuka_purple_400"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_username_hint"
+                    android:inputType="textPersonName|textCapWords"
+                    android:textColor="@color/shizuka_text_primary"
+                    android:textColorHint="@color/shizuka_text_secondary"
+                    android:textSize="14sp"
+                    android:maxLength="40" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Language dropdown label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/settings_language_label"
+                android:textColor="@color/shizuka_text_secondary"
+                android:textSize="13sp" />
+
+            <!-- Language Spinner -->
+            <Spinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/settings_save_button"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="0.04"
+                app:backgroundTint="#7C3AED"
+                app:cornerRadius="14dp"
+                app:rippleColor="#AA8B5CF6" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

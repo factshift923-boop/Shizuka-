@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Shizuka" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/shizuka_purple_600</item>
+        <item name="colorPrimaryVariant">@color/shizuka_purple_900</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/shizuka_pink</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:windowBackground">@color/shizuka_purple_900</item>
+        <item name="android:statusBarColor">@color/shizuka_purple_900</item>
+        <item name="android:navigationBarColor">@color/shizuka_purple_900</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Circular crop shape for ShapeableImageView -->
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shizuka_purple_900">#1A1033</color>
+    <color name="shizuka_purple_800">#241947</color>
+    <color name="shizuka_purple_700">#332265</color>
+    <color name="shizuka_accent_pink">#FF6FB5</color>
+    <color name="shizuka_accent_violet">#8C6BFF</color>
+    <color name="shizuka_text_primary">#FFFFFF</color>
+    <color name="shizuka_text_secondary">#B7ADD6</color>
+    <color name="shizuka_purple_600">#7C3AED</color>
+    <color name="shizuka_purple_400">#A78BFA</color>
+    <color name="shizuka_pink">#EC4899</color>
+    <color name="shizuka_card_bg">#2A1F4D</color>
+    <color name="shizuka_success">#4CE0A0</color>
+    <color name="shizuka_warning">#FFB454</color>
+</resources>

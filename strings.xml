@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shizuka</string>
+    <string name="dashboard_title">Shizuka</string>
+    <string name="dashboard_subtitle">Your voice. My purpose. Always here.</string>
+
+    <!-- Permission switches -->
+    <string name="switch_accessibility_title">Accessibility Service</string>
+    <string name="switch_accessibility_desc">Required for background listening, hardware hotkey capture, and screen-level automation anywhere in the OS.</string>
+
+    <string name="switch_mic_title">Microphone &amp; Background</string>
+    <string name="switch_mic_desc">Grants mic access and exempts Shizuka from battery optimisation so she keeps listening even with the screen off.</string>
+
+    <string name="switch_overlay_title">Display Over Other Apps</string>
+    <string name="switch_overlay_desc">Allows Shizuka\'s floating orb indicator to appear on top of any app.</string>
+
+    <string name="accessibility_service_description">Shizuka uses this service to listen for your voice commands, inject text into focused fields, and control apps in the background — even while other apps are open or the screen is locked. No data leaves your device except to your private backend.</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_name">Shizuka is listening</string>
+    <string name="notification_channel_desc">Shows while Shizuka\'s background voice pipeline is active.</string>
+    <string name="notification_listening_title">Shizuka is on standby</string>
+    <string name="notification_listening_text">Double-press Volume to wake me instantly.</string>
+
+    <!-- Status pills -->
+    <string name="status_all_ready">Fully awake and ready, Boss.</string>
+    <string name="status_needs_setup">A few switches need your attention.</string>
+
+    <!-- Orb labels -->
+    <string name="orb_idle">Double-press Volume to wake</string>
+    <string name="orb_listening">Listening…</string>
+    <string name="orb_thinking">Thinking…</string>
+    <string name="orb_speaking">Speaking…</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_backend_url_label">Backend URL</string>
+    <string name="settings_backend_url_hint">https://your-backend.example.com/api</string>
+    <string name="settings_gemini_key_label">Gemini API Key</string>
+    <string name="settings_gemini_key_hint">AIza…</string>
+    <string name="settings_groq_key_label">Groq API Key</string>
+    <string name="settings_groq_key_hint">gsk_…</string>
+    <string name="settings_username_label">Your Name</string>
+    <string name="settings_username_hint">Boss</string>
+    <string name="settings_language_label">Language preference</string>
+    <string name="settings_save_button">Save Settings</string>
+    <string name="settings_saved_toast">Settings saved. Shizuka will use them now.</string>
+
+    <!-- Language options (for spinner) -->
+    <string-array name="language_options">
+        <item>Auto-detect (mirror Boss)</item>
+        <item>English</item>
+        <item>Hinglish</item>
+        <item>Hindi (हिंदी)</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>auto</item>
+        <item>english</item>
+        <item>hinglish</item>
+        <item>hindi</item>
+    </string-array>
+</resources>

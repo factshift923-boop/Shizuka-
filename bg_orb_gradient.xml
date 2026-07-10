@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Neon orb — electric purple-to-blue radial gradient circle.
+  Used as the background of the voice-activity orb in activity_main.xml.
+  The outer glow ring is a separate layer; the orb pulsing is driven by
+  ObjectAnimator in code (scaleX/scaleY + alpha).
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer soft glow halo -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="60%"
+                android:centerColor="#448C6BFF"
+                android:endColor="#003B2FA4" />
+            <size android:width="180dp" android:height="180dp" />
+        </shape>
+    </item>
+
+    <!-- Mid-ring neon edge -->
+    <item
+        android:top="12dp"
+        android:bottom="12dp"
+        android:left="12dp"
+        android:right="12dp">
+        <shape android:shape="oval">
+            <stroke android:width="2dp" android:color="#CC3B82F6" />
+            <gradient
+                android:type="radial"
+                android:gradientRadius="55%"
+                android:centerColor="#CC8C6BFF"
+                android:endColor="#993B82F6" />
+        </shape>
+    </item>
+
+    <!-- Core bright orb -->
+    <item
+        android:top="28dp"
+        android:bottom="28dp"
+        android:left="28dp"
+        android:right="28dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50%"
+                android:centerColor="#FFFFFFCC"
+                android:centerX="0.38"
+                android:centerY="0.32"
+                android:endColor="#FF6D28D9" />
+        </shape>
+    </item>
+
+</layer-list>

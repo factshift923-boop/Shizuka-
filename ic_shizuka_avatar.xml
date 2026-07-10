@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Shizuka anime avatar — stylized vector art.
+  Purple/violet hair, large expressive eyes, warm companion aesthetic.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="220dp"
+    android:viewportWidth="200"
+    android:viewportHeight="220">
+
+    <!-- ── Neck ── -->
+    <path
+        android:fillColor="#F5CBA7"
+        android:pathData="M85,175 L85,195 L115,195 L115,175 C108,178 92,178 85,175 Z" />
+
+    <!-- ── Shoulders / collar ── -->
+    <path
+        android:fillColor="#4C1D95"
+        android:pathData="M55,210 L145,210 L145,192 C130,185 115,195 100,195 C85,195 70,185 55,192 Z" />
+    <!-- Collar detail -->
+    <path
+        android:fillColor="#6D28D9"
+        android:pathData="M88,195 L100,210 L112,195 L100,202 Z" />
+
+    <!-- ── Hair (back layer) ── -->
+    <path
+        android:fillColor="#3B0764"
+        android:pathData="M100,12 C62,12 32,42 28,78 L24,158 C34,148 42,164 52,158 L52,72 C52,46 74,26 100,26 C126,26 148,46 148,72 L148,158 C158,164 166,148 176,158 L172,78 C168,42 138,12 100,12 Z" />
+
+    <!-- ── Face skin ── -->
+    <path
+        android:fillColor="#FCDCB0"
+        android:pathData="M100,28 C74,28 52,50 52,76 L52,136 C52,162 74,184 100,184 C126,184 148,162 148,136 L148,76 C148,50 126,28 100,28 Z" />
+
+    <!-- ── Hair (front / top layer) ── -->
+    <!-- Main top -->
+    <path
+        android:fillColor="#4C1D95"
+        android:pathData="M52,80 C52,52 74,32 100,32 C126,32 148,52 148,80 L148,56 C144,34 124,16 100,16 C76,16 56,34 52,56 Z" />
+    <!-- Fringe / bangs sweeping left -->
+    <path
+        android:fillColor="#5B21B6"
+        android:pathData="M52,76 C54,60 60,50 68,44 L58,68 C56,72 54,74 52,76 Z" />
+    <!-- Fringe center-left -->
+    <path
+        android:fillColor="#4C1D95"
+        android:pathData="M62,36 C58,46 60,60 64,72 C68,62 70,48 72,38 Z" />
+    <!-- Fringe center -->
+    <path
+        android:fillColor="#5B21B6"
+        android:pathData="M82,28 C80,42 82,58 84,70 C88,58 90,42 92,28 Z" />
+    <!-- Fringe center-right -->
+    <path
+        android:fillColor="#4C1D95"
+        android:pathData="M100,26 C98,40 100,56 102,68 C106,56 108,40 106,26 Z" />
+    <!-- Fringe right -->
+    <path
+        android:fillColor="#5B21B6"
+        android:pathData="M126,36 C124,46 126,60 130,72 C132,62 136,48 138,36 Z" />
+    <!-- Hair ahoge (cute tuft) -->
+    <path
+        android:fillColor="#6D28D9"
+        android:pathData="M100,14 C96,4 104,-2 110,4 C116,-2 120,8 114,14 C110,10 106,10 100,14 Z" />
+    <!-- Hair sides -->
+    <path
+        android:fillColor="#3B0764"
+        android:pathData="M52,80 L52,148 C46,154 38,142 36,128 L36,92 C37,82 44,76 52,80 Z" />
+    <path
+        android:fillColor="#3B0764"
+        android:pathData="M148,80 L148,148 C154,154 162,142 164,128 L164,92 C163,82 156,76 148,80 Z" />
+
+    <!-- ── Left eye ── -->
+    <!-- White -->
+    <ellipse android:fillColor="#FFFFFF" android:cx="76" android:cy="104" android:rx="15" android:ry="17" />
+    <!-- Iris (deep violet) -->
+    <ellipse android:fillColor="#6D28D9" android:cx="76" android:cy="106" android:rx="11" android:ry="13" />
+    <!-- Inner iris gradient ring -->
+    <ellipse android:fillColor="#8B5CF6" android:cx="76" android:cy="107" android:rx="8" android:ry="9" />
+    <!-- Pupil -->
+    <ellipse android:fillColor="#1C1033" android:cx="77" android:cy="107" android:rx="5" android:ry="6" />
+    <!-- Eye shine (large) -->
+    <ellipse android:fillColor="#FFFFFF" android:cx="73" android:cy="102" android:rx="3.5" android:ry="3.5" />
+    <!-- Eye shine (small) -->
+    <ellipse android:fillColor="#FFFFFF" android:cx="79" android:cy="109" android:rx="1.5" android:ry="1.5" />
+    <!-- Upper eyelid line -->
+    <path
+        android:strokeColor="#2D1B4E"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M61,96 C66,90 88,90 91,96" />
+    <!-- Eyelash flicks -->
+    <path
+        android:strokeColor="#2D1B4E"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M61,96 L58,90 M91,96 L94,90" />
+
+    <!-- ── Right eye ── -->
+    <ellipse android:fillColor="#FFFFFF" android:cx="124" android:cy="104" android:rx="15" android:ry="17" />
+    <ellipse android:fillColor="#6D28D9" android:cx="124" android:cy="106" android:rx="11" android:ry="13" />
+    <ellipse android:fillColor="#8B5CF6" android:cx="124" android:cy="107" android:rx="8" android:ry="9" />
+    <ellipse android:fillColor="#1C1033" android:cx="125" android:cy="107" android:rx="5" android:ry="6" />
+    <ellipse android:fillColor="#FFFFFF" android:cx="121" android:cy="102" android:rx="3.5" android:ry="3.5" />
+    <ellipse android:fillColor="#FFFFFF" android:cx="127" android:cy="109" android:rx="1.5" android:ry="1.5" />
+    <path
+        android:strokeColor="#2D1B4E"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M109,96 C114,90 136,90 139,96" />
+    <path
+        android:strokeColor="#2D1B4E"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M109,96 L106,90 M139,96 L142,90" />
+
+    <!-- ── Eyebrows ── -->
+    <path
+        android:strokeColor="#3B0764"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M62,84 C68,80 84,80 90,83" />
+    <path
+        android:strokeColor="#3B0764"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M110,83 C116,80 132,80 138,84" />
+
+    <!-- ── Nose ── -->
+    <path
+        android:strokeColor="#E8A87C"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M97,130 C97,128 103,128 103,130" />
+
+    <!-- ── Mouth ── -->
+    <path
+        android:strokeColor="#C0666A"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M88,148 C93,155 107,155 112,148" />
+    <!-- Lip highlight -->
+    <path
+        android:strokeColor="#F472B6"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M96,148 C99,150 104,150 104,148" />
+
+    <!-- ── Blush marks ── -->
+    <ellipse android:fillColor="#FFB6C1" android:cx="60" android:cy="130" android:rx="14" android:ry="7"
+        android:fillAlpha="140" />
+    <ellipse android:fillColor="#FFB6C1" android:cx="140" android:cy="130" android:rx="14" android:ry="7"
+        android:fillAlpha="140" />
+
+    <!-- ── Ear stud (small jewel) ── -->
+    <ellipse android:fillColor="#A78BFA" android:cx="52" android:cy="118" android:rx="4" android:ry="4" />
+    <ellipse android:fillColor="#FFFFFF" android:cx="51" android:cy="117" android:rx="1.5" android:ry="1.5" />
+    <ellipse android:fillColor="#A78BFA" android:cx="148" android:cy="118" android:rx="4" android:ry="4" />
+    <ellipse android:fillColor="#FFFFFF" android:cx="147" android:cy="117" android:rx="1.5" android:ry="1.5" />
+
+</vector>

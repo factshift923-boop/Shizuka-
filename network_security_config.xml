@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Network security config.
+  Shizuka only talks to the user's own private backend — no third-party
+  analytics, no tracking domains, no telemetry endpoints.
+  HTTPS is enforced for all traffic (cleartextTrafficPermitted = false).
+  Only add explicit domain overrides if your backend is on HTTP during
+  development (not recommended for production).
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
